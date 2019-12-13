@@ -1,25 +1,35 @@
 const mathaddon = require('../addon');
 
+const cppClz32Label = 'CPP: clz32';
+const cppAbsLabel = 'CPP: abs';
+const jsAbsLabel = 'JS: abs';
+const jsClz32Label = 'JS: clz32';
+
+
+console.time('useless timer to take long!');
+console.timeEnd('useless timer to take long!');
+
+
 console.log('--- TIME REPORT: ALL CALLS IN 1 FILE. JS CALLS FIRST ---');
-console.time('JS: abs');
+console.time(jsAbsLabel);
 Math.abs(-2);
 Math.abs(2);
-console.timeEnd('JS: abs');
+console.timeEnd(jsAbsLabel);
 
-console.time('JS: clz32');
+console.time(jsClz32Label);
 Math.clz32(1);
 Math.clz32(11);
 Math.clz32(7);
-console.timeEnd('JS: clz32');
+console.timeEnd(jsClz32Label);
 
-console.time('CPP: abs');
+console.time(cppAbsLabel);
 mathaddon.abs(-2);
 mathaddon.abs(2);
-console.timeEnd('CPP: abs');
+console.timeEnd(cppAbsLabel);
 
-console.time('CPP: clz32');
+console.time(cppClz32Label);
 mathaddon.clz32(1);
 mathaddon.clz32(11);
 mathaddon.clz32(7);
-console.timeEnd('CPP: clz32');
+console.timeEnd(cppClz32Label);
 

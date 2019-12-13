@@ -1,0 +1,17 @@
+{
+  "name": "mathaddon",
+  "version": "1.0.0",
+  "description": "Math in C for node.js",
+  "main": "./build/Release/mathaddon",
+  "gypfile": "true",
+  "dependencies": {
+    "nan": "^2.14.0",
+    "node-gyp": "^6.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \\\"Error: no ../test specified\\\" && exit 1"
+  },
+  "author": "Yevheniia Rakhmatova",
+  "license": "ISC"
+}

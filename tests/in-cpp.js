@@ -1,4 +1,4 @@
-const mathaddon = require('../addon');
+const mathaddon = require('../cppsrc');
 
 const clz32Label = 'CPP: clz32';
 const absLabel = 'CPP: abs';

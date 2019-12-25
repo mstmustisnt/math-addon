@@ -2,7 +2,7 @@ const assert = require('assert');
 
 const math = require('bindings')('mathaddon.node');
 
-assert(math.abs(2) === 22, 'math.abs(2) is not 2');
+assert(math.abs(2) === 2, 'math.abs(2) is not 2');
 assert(math.abs(-2) === 2, 'math.abs(-2) is not 2');
 assert(math.clz32(0) === 32, 'math.clz32(0) is not 32');
 assert(math.clz32(1) === 31, 'math.clz32(1) is not  31');

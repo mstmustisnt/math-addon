@@ -1,6 +1,6 @@
 const assert = require('assert');
 
-const math = require('../build/Release/mathaddon.node');
+const math = require('bindings')('mathaddon.node');
 
 assert(math.abs(2) === 2);
 assert(math.abs(-2) === 2);
